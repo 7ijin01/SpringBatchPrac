@@ -32,7 +32,7 @@ public class DataDBConfig {
     public LocalContainerEntityManagerFactoryBean dataEntityManager() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataDBSource());
-        em.setPackagesToScan("org.example.springbatchtest.entity.data");
+        em.setPackagesToScan("org.example.springbatchtest.entity");
         em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
         HashMap<String, Object> properties = new HashMap<>();
